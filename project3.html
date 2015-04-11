@@ -1,6 +1,13 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+  <?PHP
+
+$fname = $_GET['fname'];
+print ($fname);
+
+?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 $(function(){
@@ -92,7 +99,7 @@ p.one {
     <h2 style="color:gray"font size="2">Art of Living personal development programs combine the mystical and the modern 
    </h2>    </font>
    <h2 style="color:gray"font size="2"> to help you create a life of  purpose, joy and confidence
-    </h2></font></center>
+    </h2></font></center><br><br><br><br>
 
                         </div>
 
@@ -100,10 +107,10 @@ p.one {
   <div class="col-2-3">
 <center>
  <div class="fadein">
- <img src="images1.jpg"height="325" width="600">
-  <img src="images5.jpg"height="325" width="600">
-  <img src="images6.jpg"height="325" width="600">
-<img src="images7.jpg"height="325" width="600">
+ <img src="images1.jpg"height="375" width="650">
+  <img src="images5.jpg"height="375" width="650">
+  <img src="images6.jpg"height="375" width="650">
+<img src="images7.jpg"height="375" width="650">
 </div> </center>
 <!--<center> <img src="images1.jpg"height="295" width="470"></center> -->
 </div>
@@ -111,18 +118,24 @@ p.one {
              <div class="boxed">
 <h1 style="color:brown"font size="20">Want to do the Happiness Program?</h1>
 <h2 style="color:gray"font size="10">Contact us for more information.</h1>
-<form action="/login" method="post">
+<form NAME ="form1" METHOD =" " ACTION = "">
  <TABLE BORDER="1">
   <TR>
     <TD>First name</TD>
     <TD>
-      <INPUT TYPE="TEXT" NAME="fname" SIZE="20">
+      <INPUT TYPE="TEXT"VALUE ="fname"  NAME="fname" SIZE="20">
     </TD>
   </TR>
 <TR>
     <TD>Last name</TD>
     <TD>
       <INPUT TYPE="TEXT" NAME="lname" SIZE="20">
+    </TD>
+  </TR>
+<TR>
+    <TD>Password</TD>
+    <TD>
+      <INPUT TYPE="password" NAME="password" SIZE="20">
     </TD>
   </TR>
 <TR>

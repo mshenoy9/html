@@ -19,42 +19,19 @@
  if ($users_fname && $users_lname)
   {
     mysql_query("INSERT INTO `user` (`fname`,`lname`) VALUES ('$users_fname','$users_lname')"); 
-    echo "Succesfully Registered!";
+    echo "Succesfully Registered!\r\n";
   }
 
 
 }
+mysql_close($db);
   ?>
-
-<html>
+  <html>
  <head>
  <title>Step 2</title>
  </head>
  <body>
-
-<form NAME ="form1" METHOD ="GET" ACTION = "welcome.php">
-	<h1>user form</h1>
- <TABLE BORDER="1">
-  <TR>
-    <TD>First name</TD>
-    <TD>
-      <INPUT TYPE="TEXT"VALUE =""  NAME="fname" SIZE="20">
-    </TD>
-  </TR>
-  <TR>
-    <TD>Last name</TD>
-    <TD>
-      <INPUT TYPE="TEXT"VALUE =""  NAME="lname" SIZE="20">
-    </TD>
-  </TR></TABLE>
-<P><INPUT TYPE="SUBMIT" style="color:RED" VALUE="submit" NAME="SUBMIT"></P>
-
-</FORM>
-
- </body>
+ <br><br> <a href="insertdb.html" style="color:blue"font size="10"style="text-decoration:none">HOME</a>
+ <a href="showdb.php" style="color:blue"font size="10"style="text-decoration:none">Show Database </a>
+</body>
 </html>
-<?php
-//Step5
- mysql_close($db);
-?>
- 

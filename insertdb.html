@@ -16,10 +16,13 @@
   $users_fname = $_GET['fname'];
   $users_lname = $_GET['lname'];
 
- 
-  mysql_query("INSERT INTO `user` (`fname`,`lname`) VALUES ('$users_fname','$users_lname')"); 
-  
-  echo "Succesfully Registered!";
+ if ($users_fname && $users_lname)
+  {
+    mysql_query("INSERT INTO `user` (`fname`,`lname`) VALUES ('$users_fname','$users_lname')"); 
+    echo "Succesfully Registered!";
+  }
+
+
 }
   ?>
 

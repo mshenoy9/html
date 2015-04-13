@@ -15,23 +15,30 @@
  if ( isset( $_GET['SUBMIT'] ) ) { 
   $users_fname = $_GET['fname'];
   $users_lname = $_GET['lname'];
+ $users_password = $_GET['password'];
+  $users_gender = $_GET['gender'];
+  $users_email = $_GET['email'];
+ $users_comments = $_GET['comments'];
 
  if ($users_fname && $users_lname)
   {
-    mysql_query("INSERT INTO `user` (`fname`,`lname`) VALUES ('$users_fname','$users_lname')"); 
+    mysql_query("INSERT INTO `user` (`fname`,`lname`,`passwd`,`gender`,`email`,`comments`) VALUES ('$users_fname','$users_lname','$users_password','$users_gender','$users_email','$users_comments')"); 
+    //mysql_query("INSERT INTO `user` (`fname`,`lname`) VALUES ('$users_fname','$users_lname')");
+
+
     echo "Succesfully Registered!\r\n";
   }
 
 
 }
-mysql_close($db);
+mysql_close($con);
   ?>
   <html>
  <head>
  <title>Step 2</title>
  </head>
  <body>
- <br><br> <a href="insertdb.html" style="color:blue"font size="10"style="text-decoration:none">HOME</a>
- <a href="showdb.php" style="color:blue"font size="10"style="text-decoration:none">Show Database </a>
+ <b><br> <a href="project3.html" style="color:blue" font size="10px" style="text-decoration:none">HOME</a>
+<center><button><h1><a href="showdb.php"style="text-decoration:none""color:red">show database &nbsp;</a></h1></button></center>
 </body>
 </html>

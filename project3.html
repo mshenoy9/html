@@ -2,12 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <?PHP
-
-$fname = $_GET['fname'];
-print ($fname);
-
-?>
+  
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 $(function(){
@@ -118,12 +113,12 @@ p.one {
              <div class="boxed">
 <h1 style="color:brown"font size="20">Want to do the Happiness Program?</h1>
 <h2 style="color:gray"font size="10">Contact us for more information.</h1>
-<form NAME ="form1" METHOD =" " ACTION = "">
+<form NAME ="form1" METHOD ="GET" ACTION = "welcome.php">
  <TABLE BORDER="1">
   <TR>
     <TD>First name</TD>
     <TD>
-      <INPUT TYPE="TEXT"VALUE ="fname"  NAME="fname" SIZE="20">
+      <INPUT TYPE="TEXT"VALUE =""  NAME="fname" SIZE="20">
     </TD>
   </TR>
 <TR>
@@ -141,8 +136,8 @@ p.one {
 <TR>
     <TD>Gender</TD>
     <TD>
-      <INPUT TYPE="RADIO" NAME="sex" VALUE="male"            SIZE="20">Male<br>
-       <INPUT TYPE="RADIO" NAME="sex" VALUE="female"         SIZE="20">Female
+      <INPUT TYPE="RADIO" NAME="gender" VALUE="male"            SIZE="20">Male<br>
+       <INPUT TYPE="RADIO" NAME="gender" VALUE="female"         SIZE="20">Female
     </TD>
   </TR>
   <TR>
@@ -150,11 +145,11 @@ p.one {
     <TD><INPUT TYPE="TEXT" NAME="email" SIZE="25"></TD>
   </TR>
  <TR>
-    <TD> Comment</TD>
-    <TD><textarea name="address"cols="30" rows="4"></textarea></TD>
+    <TD> Comments</TD>
+    <TD><textarea name="comments"cols="30" rows="4"></textarea></TD>
   </TR>
 </TABLE>
-<P><INPUT TYPE="SUBMIT" style="color:RED" VALUE="I AM INTERESTED" NAME="SUBMIT"></P>
+<P><INPUT TYPE="SUBMIT" style="color:RED" VALUE="I am interested" NAME="SUBMIT"></P>
 </FORM>
 </form>
 </div></center>

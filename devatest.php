@@ -4,10 +4,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	    
 	<body>
-<p><font size="5" font face="Chandas">
-&#2343;&#2352;&#2381;&#2350;&#2325;&#2381;&#2359;&#2375;&#2340;&#2381;&#2352;&#2375;&#32;
-&#2325;&#2369;&#2352;&#2369;&#2325;&#2381;&#2359;&#2375;&#2340;&#2381;&#2352;&#2375;&#10;
-&#2360;&#2350;&#2357;&#2375;&#2340;&#2366;&#2351;&#2369;&#2351;&#2369;&#2340;&#2381;&#2360;&#2357;&#2307;&#10;</font><p>
+<h1 align="center"> BHAGAVAT-GITA</h1>
 <?php
 
   $con = mysql_connect("127.0.0.1","root","manju");
@@ -27,9 +24,13 @@
  die("Database query failed: " . mysql_error());
 
  }
+echo '<font size="6"'."face='chandas'>";
 //Step4
+//	<font face="chandas" color="green">This is some text!</font>
  while ($row = mysql_fetch_array($result)) {
- echo $row[0]." ".$row[1]." <br />";
+
+
+ echo $row[0]." ".$row[1]."<br>";  
  }
 
 

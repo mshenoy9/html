@@ -27,7 +27,9 @@
 
 
     echo "Succesfully Registered!\r\n";
-  }
+
+
+
 
 
 }
@@ -35,10 +37,10 @@ mysql_close($con);
   ?>
   <html>
  <head>
- <title>Step 2</title>
+ <title></title>
  </head>
  <body>
- <b><br> <a href="project3.html" style="color:blue" font size="10px" style="text-decoration:none">HOME</a>
-<center><button><h1><a href="showdb.php"style="text-decoration:none""color:red">show database &nbsp;</a></h1></button></center>
+ <b><br> <a href="project3.html" style="color:blue" font size="20px">HOME</a>
+<center><button><p> <a href="showdb.php" style="color:blue" font size="10px" style="text-decoration:none">show database</p></button></center>
 </body>
 </html>

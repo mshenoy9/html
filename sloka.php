@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head><style>
@@ -43,29 +44,29 @@ body {
 </style>
 </head></head>
 <body>
+<?php $chapterno=$_GET['chapterno'] ;?>
 
 <h1 style="color:red">BHAGAVAT-GITA ShlokaS </h1>
 <div class="grid">
-<a href="databaseenter.php"style="text-decoration:none">Shloka 1 &nbsp;</a><br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 2  &nbsp; &nbsp;</a> <br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 3 &nbsp;&nbsp;</a><br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 4  &nbsp;&nbsp;</a><br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 5  &nbsp;&nbsp;</a><br>
- <a href="databaseenter.php"style="text-decoration:none">Shloka6  &nbsp; &nbsp;</a> <br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 7  &nbsp;&nbsp;</a><br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 8 
- &nbsp;&nbsp;</a><br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 9 </a><br>
-    <a href="databaseenter.php"style="text-decoration:none">Shloka 10  &nbsp;</a><br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 11  &nbsp; &nbsp;</a> <br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 12 &nbsp;&nbsp;</a><br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 13 &nbsp;&nbsp;</a><br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 14 </a><br>
+<a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=1"style="text-decoration:none">Shloka 1 &nbsp;</a><br>
+<a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=2"style="text-decoration:none">Shloka 2  &nbsp; &nbsp;</a> <br>
+<a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=3"style="text-decoration:none">Shloka 3 &nbsp;&nbsp;</a><br>
+<a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=4"style="text-decoration:none">Shloka 4  &nbsp;&nbsp;</a><br>
+<a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=5"style="text-decoration:none">Shloka 5  &nbsp;&nbsp;</a><br>
+<a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=6"style="text-decoration:none">Shloka6  &nbsp; &nbsp;</a> <br>
+<a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=7"style="text-decoration:none">Shloka 7  &nbsp;&nbsp;</a><br>
+<a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=8"style="text-decoration:none">Shloka 8 &nbsp;&nbsp;</a><br>
+       <a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=9"style="text-decoration:none">Shloka 9 </a><br>
+    <a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=10"style="text-decoration:none">Shloka 10  &nbsp;</a><br>
+       <a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=11"style="text-decoration:none">Shloka 11  &nbsp; &nbsp;</a> <br>
+       <a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=12"style="text-decoration:none">Shloka 12 &nbsp;&nbsp;</a><br>
+       <a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=13"style="text-decoration:none">Shloka 13 &nbsp;&nbsp;</a><br>
+       <a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=14"style="text-decoration:none">Shloka 14 </a><br>
 
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 15&nbsp;&nbsp;</a><br>
-       <a href="databaseenter.php"style="text-decoration:none">Shloka 16
+       <a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=15"style="text-decoration:none">Shloka 15&nbsp;&nbsp;</a><br>
+       <a href="databaseenter.php?chapterno=<?php echo $chapterno ?>&shlokano=16"style="text-decoration:none">Shloka 16
  &nbsp;&nbsp;</a><br>
-       <a href="Shloka.php"style="text-decoration:none">Shloka 17 </a><br>
+       <a href="Shloka.php?chapterno=<?php echo $chapterno ?>&shlokano=17"style="text-decoration:none">Shloka 17 </a><br>
   <a href="databaseente.php"style="text-decoration:none">Shloka 18 </a>  <br>
 <a href="databaseenter.php"style="text-decoration:none">Shloka 19 &nbsp;</a><br>
        <a href="databaseenter.php"style="text-decoration:none">Shloka 20  &nbsp; &nbsp;</a> <br>
@@ -107,6 +108,7 @@ body {
        <a href="databaseenter.php"style="text-decoration:none">Shloka 50  &nbsp; &nbsp;</a> <br>
       
 </div>
+
 
 </body>
 </html>

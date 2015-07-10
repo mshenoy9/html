@@ -44,7 +44,9 @@ body {
 </style>
 </head></head>
 <body>
-<?php $chapterno=$_GET['chapterno'] ;?>
+<?php
+ $chapterno=$_GET['chapterno'] 
+;?>
 
 <h1 style="color:red">BHAGAVAT-GITA ShlokaS </h1>
 <div class="grid">

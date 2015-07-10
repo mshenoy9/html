@@ -23,22 +23,25 @@
 </style>
 </head>
 <body>
-<?php $chapterno=$_GET['chapterno'] ; $shlokano=$_GET['shlokano'] ;
-	echo $chapterno ." ".$shlokano;?>
-
-
+<?php
+ $chapterno=$_GET['chapterno'] ; $shlokano=$_GET['shlokano'] ;
+	 
+?>
 <div class="boxed">
 <table>
 <form NAME ="form1" METHOD ="GET" ACTION = "success.php">
 <TR>
     <TD>Enter the shloka: </TD>
-    <TD><textarea name="entershloka"value="shloka" cols="30" rows="12"></textarea></TD>
+    <TD><textarea name="shloka"value="shloka" cols="30" rows="12"></textarea></TD>
   </TR>
+
 </table>
-<center><P><INPUT TYPE="SUBMIT" style="color:RED" VALUE="submit" NAME="SUBMIT"></P><center><br>
-<p>chapter no<p>
+<center><P><INPUT TYPE="SUBMIT" style="color:RED" VALUE="submit" NAME="submit"></P></center><br>
+<p>chapter no and shloka no :</p>
+
 <?php echo $chapterno ." ".$shlokano;?>
 </form>
+
 </body>
 </html>
 

@@ -1,21 +1,25 @@
-
-
 <?php
-    /* Connecting to database */
+    session_start();
+    echo "Chapter number is " . $_SESSION["chapter_id"] . ".<br>";
+    echo "shloka number is " . $_SESSION["shloka_id"] . ".<br>";
+    $chapter_no = $_SESSION["chapter_id"];
+	$shloka_no = $_SESSION["shloka_id"];
+    
+        /* Connecting to database */
     $con = mysql_connect("127.0.0.1","root","manju");
 
-    /* Check if connected */ 
+        /* Check if connected */ 
     if (!$con)	{
       	die('Could not connect: ' . mysql_error());
     } 
     
-    /* Displaying connected message*/     
+        /* Displaying connected message*/     
     echo "Succesfully Connected!<br/>";
     
-    /* selecting database */
+        /* selecting database */
     $db_select = mysql_select_db("bhagavat_database",$con);
     
-    /* check if database selected */
+        /* check if database selected */
     if (!$db_select)	{
   	    die("Database selection also failed miserably: " . mysql_error());
     }
@@ -24,33 +28,42 @@
         echo "Database Succesfully Selected!<br/>";
     }
     
-     /* check if submit button clicked */
-    if ( isset( $_GET['submit'] ) )	{ 
-        /* $chapter_no = $_GET['chapterno'];
-	    $shloka_no = $_GET['shlokano'];*/
+        /* check if submit button clicked */
+    if ( isset( $_GET['submit'] ) ) 	{ 
         $shloka = $_GET['shloka'];
         /* Displaying debug message*/     
         echo "Submit Button recognized!<br/>";
     }
     else    {
-         /* Displaying debug message*/     
+        /* Displaying debug message*/     
         echo "Submit button not recognized!<br/>";   
     }
-
- 	/*if ($chapter_no && $shloka_no )*/
-    
-    /* check if shloka entered */
+       
+        /* check shlokano and chapterno clicked*/   
+ 	if ($chapter_no && $shloka_no )     {
+        $id=(($chapter_no-1)*100+$shloka_no);
+        echo"id= $id<br>";
+    }             	
+    else    { 
+        /* Displaying debug message*/ 
+        echo "please select chapterno and shlokano!<br/>";        	
+    } 	
+        
+        /* check if shloka entered */
     if ($shloka)  {
         /* inserting data into table(bhagavat) */
-        mysql_query("INSERT INTO `bhagavat` (`shloka`) VALUES ('$shloka')"); 
+        mysql_query("UPDATE bhagavat SET chapterno = '$chapter_no' , shlokano = '$shloka_no' , shloka = '$shloka'  WHERE id = '$id';");
         echo "Shloka = $shloka<br/>";
-        /* mysql_query("INSERT INTO `chapter1` (`chapterno`,`shlokano`,`shloka`) VALUES ('$chapter_no','$shloka_no','$shloka')"); */
         echo "Succesfully Registered!<br/>";
     }
-    else    {
+     else    {
      /* check successfully entered*/     
-        echo "Not registered!<br/>";  
-    }   
+       echo "Not registered!<br/>";  
+    } 
+     
+    /*while ($row = mysql_fetch_array($result)) {
+    echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]."<br>";
+    }*/
     /* php ends here */
     mysql_close($con);
 ?>

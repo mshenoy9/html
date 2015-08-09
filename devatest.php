@@ -25,8 +25,7 @@
 
  }
 echo '<font size="6"'."face='chandas'>";
-//Step4
-//	<font face="chandas" color="green">This is some text!</font>
+
  while ($row = mysql_fetch_array($result)) {
 
 

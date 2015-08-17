@@ -42,15 +42,20 @@ body {
 </style>
 </head>
 <body>
+<?php
+    echo " " . date("Y.m.d") . "<br>";
+   echo " " . date("h:i:sa");
+?>    
     <div class="grid">
     <center><img src="bhagavatimage2.jpg"width="500"height="200">
     </center>
     <hr color="red">
     <br>
         </div>
+      <center>  <a href="help.php"style="text-decoration:none">Help  &nbsp; &nbsp;</a> <br></center>
     <div class=".col-2-3">
     <h1 style="color:red">BHAGAVAT-GITA </h1>
-    <a href="sloka.php?chapterno=1"style="text-decoration:none">CHAPTER1 : Arjun Vishad Yog aaa&nbsp;</a><br>
+    <a href="sloka.php?chapterno=1"style="text-decoration:none">CHAPTER1 : Arjun Vishad Yog &nbsp;</a><br>
     <a href="sloka.php?chapterno=2"style="text-decoration:none">CHAPTER2 : Sankhya Yog &nbsp; &nbsp;</a> <br>
     <a href="sloka.php?chapterno=3"style="text-decoration:none">CHAPTER3 : Karma Yog &nbsp;&nbsp;</a><br>
     <a href="sloka.php?chapterno=4"style="text-decoration:none">CHAPTER4 : Gyan-Karma-Sanyas Yog &nbsp;&nbsp;</a><br>

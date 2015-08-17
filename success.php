@@ -35,12 +35,12 @@
     if ( isset( $_GET['submit'] ) ) 	{ 
         $shloka = $_GET['shloka'];
         /* Displaying debug message*/     
-       // echo "Submit Button recognized!<br/>";
-    }
-    else    {
+      //  echo "Submit Button recognized!<br/>";
+   }
+   // else    {
         /* Displaying debug message*/     
-        echo "Submit button not recognized!<br/>";   
-    }
+     //   echo "Submit button not recognized!<br/>";   
+   // }
        
         /* check shlokano and chapterno clicked*/   
  	if ($chapter_no && $shloka_no )     {
@@ -63,15 +63,15 @@
         /* check successfully entered*/     
         echo "Not registered!<br/>";  
     } 
-        
-        $result = mysql_query("SELECT *  FROM bhagavat", $con);
+       
+    $result = mysql_query("SELECT *  FROM bhagavat", $con);
     if (!$result) {
         die("Database query failed: " . mysql_error());
     }
         echo '<font size="6"'."face='chandas'>";
         echo "Shloka = $shloka<br/>";
-        
-/* php ends here */
+    
+        /* php ends here */
 mysql_close($con);
 ?>
 </body>
